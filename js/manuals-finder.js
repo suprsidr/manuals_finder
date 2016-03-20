@@ -2,7 +2,7 @@
  * @author wpatterson
  * @email wpatterson@horizonhobby.com
  * @version 1.0.1
- * @date 1/7/2015
+ * @date 3/14/2016
  */
 
 (function(root, $, document, undefined){
@@ -193,32 +193,5 @@
   }
 
   manualsFinderinit();
-
-  /*Array.prototype.filterData = function() {
-    var regex = 'manual';
-    return this.reduce(function(prev, next) {
-      next.Attributes.forEach(function(attr) {
-        if (attr.ID === 'Manual') {
-          var gotOne = false;
-          try {
-            attr.Name.forEach(function(man) {
-              if (gotOne) return;
-              if (man.toLowerCase().match(regex)) {
-                prev.push(next);
-                gotOne = true;
-              }
-            });
-          } catch (e) {
-            if (gotOne) return;
-            if (attr.Name.toLowerCase().match(regex)) {
-              prev.push(next);
-              gotOne = true;
-            }
-          }
-        }
-      });
-      return prev;
-    }, []);
-  }*/
   Array.prototype.unique = function(){var n=this; return n.reduce(function(n,r){return n.indexOf(r)<0&&n.push(r),n},[])}
 }(window, window.jQuery, document))
