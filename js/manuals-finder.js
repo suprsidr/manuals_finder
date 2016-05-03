@@ -3,6 +3,8 @@
  * @email wpatterson@horizonhobby.com
  * @version 1.0.1
  * @date 3/14/2016
+ *
+ * Same as parts finder with updated query for manuals
  */
 
 (function(root, $, document, undefined){
